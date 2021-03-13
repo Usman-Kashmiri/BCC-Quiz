@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz | Bilawal Coaching Center</title>
+<!--Style Sheets & CDNs-->
+<link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+<link rel="stylesheet" href="assets/styles/main.css">
+<link rel="stylesheet" href="assets/styles/quiz.css">
+<link rel="stylesheet" href="assets/styles/sweetalert2.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<!-- Bootstrap CDN -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Jquery CDN -->
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<!--Favicon-->
+<link rel="shortcut icon" href="assets/images/Icons/favicon.png" type="image/x-icon">
+<!---Font---->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+</head>
+
+<body>
+    <!------------------------------------------------------------------NavBar---------------------------------------------------------------->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img width="85px" src="assets/images/quiz/logo.png"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-sm-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="demo.html">Demo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="lesson.html">Lessons</a>
+                        </li>
+                        <li class="nav-item current">
+                            <a class="nav-link" href="quiz.html">Quiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- Social-Icons -->
+    <div class="icons-box">
+        <div class="social-links">
+            <ul>
+                <li class="social-icon">
+                    <a href="#"><img src="assets/images/Icons/whatsapp.png" alt="Whatsapp"></a>
+                </li>
+                <li class="social-icon">
+                    <a href="#"><img src="assets/images/Icons/instagram.png" alt="Instagram"></a>
+                </li>
+                <li class="social-icon">
+                    <a href="#"><img src="assets/images/Icons/facebook.png" alt="Facebook"></a>
+                </li>
+                <li class="social-icon">
+                    <a href="#"><img src="assets/images/Icons/youtube.png" alt="Youtube"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--------Banner------->
+    <!-- Page top Section -->
+    <section id="page-top-section">
+        <div class="container-fluid">
+            <h2 class="text-light">Quiz</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent">
+                    <li class="breadcrumb-item"><a href="demo.html" class="text-light">Home</a></li>
+                    <li class="breadcrumb-item active text-light" aria-current="page">Quiz</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+    <!-- Page top Section end -->
+
+    <!-- Main -->
+    <main>
+        <section id="main-section">
+            <div class="col-lg-auto">
+                <h2 class="text-center">Select an option to start Quiz:</h2>
+                <div class="full-book-quiz">
+                    <h4>Full Book Quiz</h4>
+                    <button onclick="startquizbtn()" type="button">Start Quiz</button>
+                    <div class="progress-bar">
+                        <div class="progress">75%</div>
+                    </div>
+                    <br>
+                    <p>Attempted 5525 out of 7241 Questions</p>
+                </div>
+                <div class="chap-wise-quiz">
+                    <h4>Chapter Wise Quiz</h4>
+                    <button onclick="startquizbtn()" type="button">Start Quiz</button>
+                    <div class="progress-bar">
+                        <div class="progress">60%</div>
+                    </div>
+                    <br>
+                    <p>Attempted 4444 out of 7241 Questions</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!------------------------------------------------- Footer Started ------------------------------------------->
+    <footer class="footer bg-dark">
+        <div class="container-fluid">
+            <div class="footer-heading">
+                <h3 class="text-center text-white">Bilawal Coaching Center</h3>
+                <img src="assets/images/Icons/favicon.png" class="footer-img">
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p class="text-left text-white">&#169; All Rights Reserved 2021-22</p>
+                </div>
+                <div class="col">
+                    <p class="text-right text-white">Designed By Usman Kashmiri</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--------------------------------------------------- Footer Ended -------------------------------------------->
+
+    <!---------------------------------------JavaScript------------------------------------------------>
+    <!-- Other CDNs -->
+    <script src="assets/scripts/jquery-slim.min.js"></script>
+    <script src="assets/scripts/bootstrap.min.js"></script>
+    <script src="assets/scripts/sweetalert2.min.js"></script>
+    <script src="https://kit.fontawesome.com/dbed6b6114.js "></script>
+    <!-- Custom JS -->
+    <script src="assets/scripts/quiz.js"></script>
+</body>
+
+</html>
