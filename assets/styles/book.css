@@ -89,6 +89,29 @@ main {
     align-content: center;
 }
 
+.audio button {
+    width: auto;
+    font-size: 24px;
+    margin: 2%;
+    padding: 1% 2%;
+    display: block;
+    position: relative;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    background-color: #0a46a0;
+    transition: transform 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+.audio button:hover {
+    box-shadow: 5px 7px 14px #ed1f24;
+    text-decoration: none;
+    transform: translateY(-4px);
+}
+
 
 /* Quiz-Footer */
 
