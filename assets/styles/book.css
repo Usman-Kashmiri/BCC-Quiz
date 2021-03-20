@@ -26,6 +26,11 @@ main {
 
 /* Pagination */
 
+div.pagination {
+    display: flex;
+    justify-content: center;
+}
+
 .page-item {
     padding-left: 2% !important;
 }
@@ -65,11 +70,6 @@ main {
     margin-top: 3%;
 }
 
-.quiz-body nav {
-    position: relative;
-    left: 25%;
-}
-
 #questions {
     display: block;
 }
@@ -89,10 +89,14 @@ main {
     align-content: center;
 }
 
+.q-text span {
+    padding: 2%;
+}
+
 .audio button {
     width: auto;
     font-size: 24px;
-    margin: 2%;
+    left: 6%;
     padding: 1% 2%;
     display: block;
     position: relative;
@@ -125,15 +129,19 @@ main {
     padding: 2% 0 0 2%;
 }
 
-.quiz-footer button {
-    width: 160px;
+.result-btn {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0 2% 1% 0;
+}
+
+.result-btn button {
+    width: auto;
     height: 60px;
     font-size: 24px;
-    margin: 2%;
     padding: 1% 2%;
     display: block;
     position: relative;
-    left: 76%;
     border: none;
     border-radius: 18px;
     text-decoration: none;
@@ -144,17 +152,16 @@ main {
     cursor: pointer;
 }
 
-.quiz-footer button:hover {
+.result-btn button:hover {
     box-shadow: 5px 7px 14px #ed1f24;
     text-decoration: none;
     transform: translateY(-4px);
 }
 
 .true-false {
-    width: auto;
-    left: 25%;
-    display: inline;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 3%;
 }
 
 #true-btn {
@@ -205,4 +212,23 @@ main {
     color: white;
     box-shadow: none;
     transform: none;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1920px) {
+    #questions img {
+        width: 98%;
+    }
+    #questions h2 {
+        padding: 4%;
+        font-size: 30px;
+    }
+    .page-item {
+        padding-left: 3% !important;
+    }
+    .audio button {
+        font-size: 30px;
+    }
 }
