@@ -9,6 +9,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .quiz-section {
@@ -32,7 +33,7 @@ div.pagination {
 }
 
 .page-item {
-    padding-left: 2% !important;
+    padding-left: 0;
 }
 
 .page-link {
@@ -87,6 +88,7 @@ div.pagination {
 
 .q-text {
     align-content: center;
+    padding-top: 5%;
 }
 
 .q-text span {
@@ -219,16 +221,133 @@ div.pagination {
 
 @media screen and (max-width: 1920px) {
     #questions img {
-        width: 98%;
+        width: 88%;
     }
     #questions h2 {
-        padding: 4%;
-        font-size: 30px;
+        font-size: 34px;
+    }
+    div.pagination nav {
+        position: relative;
+        left: -4%;
     }
     .page-item {
-        padding-left: 3% !important;
+        margin-left: 3% !important;
+    }
+    .row {
+        width: 100%;
+        display: inline-block;
+    }
+    .q-img {
+        width: 25%;
+        display: inline-block;
+    }
+    .q-text {
+        width: 70%;
+        padding-left: 4%;
+        display: inline-block;
     }
     .audio button {
         font-size: 30px;
+    }
+    .true-false {
+        padding: 2%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #questions img {
+        width: 94%;
+    }
+    #questions h2 {
+        font-size: 24px;
+    }
+    .audio button {
+        font-size: 22px;
+    }
+    .true-false {
+     padding: 4% 0 4% 0;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .quiz-section {
+        width: 90%;
+    }
+    #questions img {
+        width: 100%;
+    }
+    .quiz-footer h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .quiz-section {
+        width: 80%;
+    }
+    .row {
+        display: block;
+    }
+    #questions h2 {
+        font-size: 24px;
+    }
+    #questions img {
+        width: 50%;
+        padding: 2% 0;
+        left: 5%;
+    }
+    .q-img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .q-text{
+        width: 96%;
+    }
+    .true-false {
+        padding: 6% 0 6% 0;
+    }
+    .result-btn {
+        padding: 0 2% 3% 0;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .quiz-section {
+        width: 100%;
+    }
+    #questions h2 {
+        padding: 6% 0 4% 8%;
+        font-size: 18px;
+    }
+    #questions img {
+        width: 58%;
+    }
+    .q-text {
+        width: 100%;
+    }
+    div.pagination nav {
+        left: -3%;
+    }
+    .page-item {
+        margin-left: 1% !important;
+    }
+    .page-link {
+        width: 90%;
+    }
+    .quiz-footer h3 {
+        font-size: 20px;
+    }
+    #true-btn {
+        width: 115px;
+        margin-right: 4%;
+    }  
+    #false-btn {
+        width: 115px;
+    }
+    .result-btn button {
+        width: auto;
+        height: 50px;
+        font-size: 18px;
     }
 }
